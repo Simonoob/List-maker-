@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Shopping list</title>
+</head>
+<body>
+    <header>
+        <h1>Grocery list</h1>
+    </header>
+    <form>
+        <input type="text" class="item-input">
+        <button class="item-button" type="submit">
+            <i class="fas fa-cart-plus"></i>
+        </button>
+        <div class="select">
+            <select name="items" id="filter-items">
+                <option value="All">All</option>
+                <option value="Bought">Bought</option>
+                <option value="To buy">To buy</option>
+            </select>
+        </div>
+    </form>
+
+    <div class="list-container">
+        <ul class="list"></ul>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+</html>
